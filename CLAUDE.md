@@ -4,7 +4,7 @@
 
 \## Project Overview
 
-FlyRank Frontend AI Engineering track ka capstone project.
+FlyRank Frontend AI Engineering track .
 
 
 
