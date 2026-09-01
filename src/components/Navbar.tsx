@@ -5,6 +5,7 @@ export default function Navbar() {
     { href: "/", label: "Dashboard" },
     { href: "/expenses/add", label: "Add Expense" },
     { href: "/history", label: "History" },
+    { href: "/chat", label: "AI Assistant" },
     { href: "/settings", label: "Settings" },
     { href: "/profile", label: "Profile" },
     { href: "/health", label: "Health" },
