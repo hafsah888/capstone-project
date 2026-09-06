@@ -105,7 +105,7 @@ npm run test:e2e  # Run Playwright end-to-end tests
 ```
 ## Performance & Accessibility Audit
 
-![Lighthouse Scores](./lighthouse-score.png)
+![Lighthouse Scores]
 
 - Performance: 78
 - Accessibility: 98
