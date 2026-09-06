@@ -49,8 +49,8 @@ describe("chat message renderer", () => {
   it("renders a summary card with total and category breakdown", () => {
     render(<SpendingSummaryCard output={summary} />);
     expect(screen.getByText("Total spent")).toBeInTheDocument();
-    expect(screen.getByText("$420")).toBeInTheDocument();
-    expect(screen.getByText("$180")).toBeInTheDocument();
+   expect(screen.getByText("$420.00")).toBeInTheDocument();
+   expect(screen.getByText("$180.00")).toBeInTheDocument();
     expect(screen.getByText("2 categories")).toBeInTheDocument();
   });
 });
