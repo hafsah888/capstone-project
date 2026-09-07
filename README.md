@@ -112,7 +112,7 @@ npm run test:e2e  # Run Playwright end-to-end tests
 - Best Practices: 100
 - SEO: 60
 
-Deployment Checklist
+**Deployment Checklist**
 
 ✅ Environment variables (Firebase + Google Generative AI keys) securely stored in Vercel dashboard, never committed to GitHub (.env in .gitignore)
 ✅ Production deployment tested and verified — live data loads correctly from Firebase (no mock/fallback data)
@@ -128,7 +128,7 @@ Error handling: The AI chat feature shows a fallback error message when Firebase
 
 
 
-Reflection
+**Reflection**
 
 What was hardest? Why?
 The hardest part wasn't writing code — it was understanding how deployment actually differs from local development. My app worked perfectly with npm run dev, but the production build kept failing with a Firebase: auth/invalid-api-key error. It took a while to realize that .env files aren't automatically available to Vercel just because they exist locally — they have to be manually added as environment variables in the deployment platform's settings. Even after fixing that, I hit a second, more confusing issue: clicking "Redeploy" on Vercel doesn't rebuild your latest code — it re-runs the exact commit it was originally built from. I had to specifically trigger a fresh deployment on my newest commit for the environment variables to actually take effect. Debugging this required reading build logs carefully instead of guessing, which was a new skill for me.
